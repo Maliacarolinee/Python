@@ -1,4 +1,4 @@
-#This code I've created a program that simulates a random number generator.
+#This code I've created, creates a program that simulates a random number generator.
 
 #The code imports the random module, which provides functions for generating random numbers.
 
