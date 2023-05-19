@@ -1,0 +1,39 @@
+#This code I've created a program that simulates a random number generator.
+
+#The code imports the random module, which provides functions for generating random numbers.
+
+import random
+
+#Next, there is a function named 'number_generator()' that generates a random number between 1 and 1000 using the 'randint()' function from the random module. 
+#It prints a message indicating that it is picking a number and then returns the generated number.
+
+def number_generator():
+  
+  print('Picking a number...')
+  
+  return random.randint(1,1000)
+
+
+print('Welcome to my random number generator simulator!')
+
+#The program then prompts the user for their name and greets them with a personalized message.
+
+name = input('What is your name? ')
+
+print('Hello '+ name)
+
+#Inside the 'while' loop, the program waits for the user to press enter to generate a random number or type "quit" to exit the program.
+
+while True:
+
+#When the user presses enter, the number_result variable is assigned the result of calling the number_generator() function, generating a random number.
+
+   input(name+' '+'press enter to receive a number, or type quit to exit...')
+   
+   number_result = number_generator()
+ 
+#Finally, the program prints the user's name along with the generated number.
+
+#The loop continues until the user types "quit" to exit the program.
+  
+  print(name+' '+ 'your number is', number_result)
