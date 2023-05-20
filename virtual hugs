@@ -1,0 +1,47 @@
+#In honor of Mental Health Awareness month I created this code <3
+
+#The 'import time' statement imports the 'time' module, which provides functions to handle time-related operations.
+
+import time
+
+#The 'send_hugs()' function is defined. It contains a series of print statements and 'time.sleep()' function calls to simulate the process of sending virtual hugs.
+
+def send_hugs():
+    
+    #The first print statement displays the message "Press Enter to receive a virtual hug..." to prompt the user to press the Enter key.
+    
+    print("Press Enter to receive a virtual hug...")
+    
+    #The 'input()' function is used to wait for the user to press the Enter key. It will pause the program's execution until the Enter key is pressed.
+    
+    input()
+    print("Sending virtual hugs!")
+    
+    #The time.sleep(1) function call pauses the program's execution for 1 second, creating a brief delay before printing each letter of "HUGS!".
+    
+    #After the user presses Enter, the program continues to the next line and prints "Sending virtual hugs!" to indicate that the hugs are being sent.
+    
+    time.sleep(1)
+   print("H", end="")
+   
+   #Between each letter, there's a time.sleep(0.5) call that pauses the program's execution for 0.5 seconds, creating a slight delay between each letter.
+   
+   time.sleep(0.5)
+    
+    #The subsequent print statements use the end="" argument to ensure that each letter of "HUGS!" is printed on the same line without a newline character.
+    
+    print("U", end="")
+    time.sleep(0.5)
+    print("G", end="")
+    time.sleep(0.5)
+    print("S", end="")
+    time.sleep(0.5)
+  
+  #Finally, the exclamation mark is printed, and the message "Hugs received. Sending love and positivity your way!" is displayed.
+   
+   print("!")
+    print("Hugs received. Sending love and positivity your way!")
+
+#The function send_hugs() is called at the end, which initiates the execution of the code inside the function.
+
+send_hugs()
