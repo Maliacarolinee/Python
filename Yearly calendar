@@ -1,0 +1,25 @@
+#This code imports the calendar module, which provides functions to work with calendars.
+
+import calendar
+
+#The code prompts the user to enter a year for which they want to generate a calendar. The input is stored in the variable 'year'.
+
+year = input('Enter year of calendar')
+year = int(year)
+
+#Then, it checks if the entered year is less than 2000 or greater than 3000. 
+
+#If the condition is true, it prints 'Invalid year' to indicate that the entered year is not within the valid range.
+
+if year < 2000 or year > 3000:
+  
+  #If the year is valid, it calls the calendar function with the year as an argument to generate a calendar for that year. 
+  
+  #The calendar function returns a multi-line string representing the calendar. 
+  
+  print('Invalid year')
+else:
+  
+  #Finally, it prints the generated calendar to the console.
+  
+  print(calendar.calendar(year))
